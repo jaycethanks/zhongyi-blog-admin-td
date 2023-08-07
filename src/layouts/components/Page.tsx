@@ -19,6 +19,7 @@ const Page = ({
   }, [isFullPage]);
 
   if (isFullPage) {
+    console.log('[isFullPage]: ', isFullPage);
     return <>{children}</>;
   }
 

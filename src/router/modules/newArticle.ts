@@ -10,15 +10,7 @@ const result: IRouter[] = [
       title: '新增文章',
       Icon: EditIcon,
     },
-    children: [
-      {
-        path: 'index',
-        Component: lazy(() => import('pages/NewArticle')),
-        meta: {
-          title: '新增文章',
-        },
-      },
-    ],
+    Component: lazy(() => import('pages/NewArticle')),
   },
 ];
 
