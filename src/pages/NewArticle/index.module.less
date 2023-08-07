@@ -1,0 +1,61 @@
+.main {
+  :global {
+    .bytemd {
+      height: calc(100vh - 5.334rem);
+      border: 0;
+    }
+  }
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  height: 5.334rem;
+  padding: 0 2rem;
+  border-bottom: 1px solid #ddd;
+  :global {
+    .ant-input {
+      height: 100%;
+      font-weight: 500;
+      font-size: 24px;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+.submit-overlay {
+  :global {
+    .ant-popover-inner-content {
+      width: 34.4rem;
+      padding: 0.8rem 1rem 0 1rem;
+    }
+  }
+
+  .header {
+    padding: 0.5rem;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .footer {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0.5rem 0;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -1rem;
+      width: 34rem;
+      height: 1px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      content: '';
+    }
+  }
+}

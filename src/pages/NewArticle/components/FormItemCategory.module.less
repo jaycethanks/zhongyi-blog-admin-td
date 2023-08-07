@@ -1,0 +1,21 @@
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  :global {
+    .ant-radio-button-wrapper {
+      min-width: 6rem;
+      color: #86909c;
+      text-align: center;
+      background-color: #f4f5f5;
+      border: none;
+    }
+    .ant-radio-button-wrapper:not(:first-child)::before {
+      content: none;
+    }
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      color: #1d7dfa;
+      background-color: #e8f3ff;
+    }
+  }
+}

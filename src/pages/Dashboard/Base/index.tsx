@@ -6,7 +6,7 @@ import RankList from './components/RankList';
 const DashBoard = () => (
   <div style={{ overflowX: 'hidden' }}>
     <TopPanel />
-    <MiddleChart />
+    {/* <MiddleChart /> */}
     <RankList />
   </div>
 );
